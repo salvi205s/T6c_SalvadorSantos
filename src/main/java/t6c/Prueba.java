@@ -48,7 +48,6 @@ public class Prueba {
         listaAnimales.add(pulpo);
         listaAnimales.add(calamar);
 
-        
         for (Animal animales : listaAnimales) {
             animales.presentacion();
             System.out.println("");
@@ -57,7 +56,7 @@ public class Prueba {
         System.out.println("-----------------------------------------------------------------");
         //Recorre la lista y realiza las siguientes acciones:  
         //llama a métodos propios de cada clase (“metodoB”, “metodoC” y “metodoD”). llama a “metodoA” de todos los objetos.
-        
+
         //Todas las conversiones dentro de este for son explicitas
         for (Animal animales : listaAnimales) {
 
@@ -86,5 +85,18 @@ public class Prueba {
             }
 
         }
+
+        /*Usa los métodos indexof(Object o), contains(Object o) y remove(Object o) de la clase ArrayList, 
+        sobre la lista de objetos que ya tienes, para buscar un objeto en la lista, saber si existe un objeto en la lista y borrar un objeto de la lista, 
+        respectivamente. Si funcionan correctamente significa que el método equals está correctamente implementado. Realiza un commit 
+         */
+        System.out.println("indexof " + listaAnimales.indexOf(pulpo));
+        System.out.println("contains " + listaAnimales.contains(pulpo));
+        System.out.println("remove " + listaAnimales.remove(pulpo));
+
+        for (int i = 0; i < listaAnimales.size(); i++) {
+            System.out.println(listaAnimales.get(i));
+        }
+
     }
 }
