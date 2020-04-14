@@ -38,6 +38,7 @@ public class Especie extends Animal {
         this.numPatas = numPatas;
     }
 
+    //metodo polimórfico
     @Override
     public void presentacion() {
         super.presentacion();
@@ -48,6 +49,7 @@ public class Especie extends Animal {
         System.out.println("Soy un animal de una especie sin determinar ");
     }
 
+    //metodo polimórfico
     public void comunicacion() {
         System.out.println("Me comunico mediante sonidos");
     }
