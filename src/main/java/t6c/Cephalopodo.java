@@ -11,14 +11,16 @@ import java.util.Objects;
  *
  * @author Salva
  */
-public class Octopoda extends Especie {
+public class Cephalopodo extends Especie {
 
     private String habitat;
 
-    public Octopoda(String habitat, VertebradoInvertebrado vertebradoInvertebrado) {
-        super(vertebradoInvertebrado);
+    public Cephalopodo(String habitat, String tipo, int numPatas, VertebradoInvertebrado vertebradoInvertebrado) {
+        super(tipo, numPatas, vertebradoInvertebrado);
         this.habitat = habitat;
     }
+
+
 
     public String getHabitat() {
         return habitat;
@@ -66,7 +68,7 @@ public class Octopoda extends Especie {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Octopoda other = (Octopoda) obj;
+        final Cephalopodo other = (Cephalopodo) obj;
         if (!Objects.equals(this.habitat, other.habitat)) {
             return false;
         }
