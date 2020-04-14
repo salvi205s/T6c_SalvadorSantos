@@ -28,6 +28,11 @@ public class Octopoda extends Especie {
         this.habitat = habitat;
     }
 
+    public void presentacion() {
+        super.presentacion();
+        System.out.println("y vivo en " + habitat);
+    }
+
     @Override
     public int hashCode() {
         int hash = 5;
