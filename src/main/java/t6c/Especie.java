@@ -36,6 +36,11 @@ public class Especie extends Animal {
         this.numPatas = numPatas;
     }
 
+    public void presentacion() {
+        super.presentacion();
+        System.out.println("tengo " + numPatas + " patas ");
+    }
+    
     @Override
     public int hashCode() {
         int hash = 3;
@@ -64,8 +69,6 @@ public class Especie extends Animal {
         }
         return true;
     }
-
-   
 
     @Override
     public String toString() {
