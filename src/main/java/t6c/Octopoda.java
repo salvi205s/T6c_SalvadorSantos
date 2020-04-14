@@ -28,6 +28,7 @@ public class Octopoda extends Especie {
         this.habitat = habitat;
     }
 
+    @Override
     public void presentacion() {
         super.presentacion();
         System.out.println("y vivo en " + habitat);
@@ -35,6 +36,11 @@ public class Octopoda extends Especie {
 
     public void parear() {
         System.out.println("Me he pateado medio oceano pacifico");
+    }
+
+    @Override
+    public void comunicacion() {
+        System.out.println("Me comunico por señas");
     }
 
     @Override
