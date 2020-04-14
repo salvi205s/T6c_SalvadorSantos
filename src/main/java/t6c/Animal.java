@@ -13,7 +13,7 @@ import java.util.Objects;
  */
 public class Animal {
 
-private VertebradoInvertebrado vertebradoInvertebrado;
+    private VertebradoInvertebrado vertebradoInvertebrado;
 
     public Animal(VertebradoInvertebrado vertebradoInvertebrado) {
         this.vertebradoInvertebrado = vertebradoInvertebrado;
@@ -25,6 +25,10 @@ private VertebradoInvertebrado vertebradoInvertebrado;
 
     public void setVertebradoInvertebrado(VertebradoInvertebrado vertebradoInvertebrado) {
         this.vertebradoInvertebrado = vertebradoInvertebrado;
+    }
+
+    public void presentacion() {
+        System.out.print("Hola soy un animal ");
     }
 
     @Override
@@ -56,9 +60,5 @@ private VertebradoInvertebrado vertebradoInvertebrado;
     public String toString() {
         return "Animal{" + "vertebradoInvertebrado=" + vertebradoInvertebrado + '}';
     }
-
-   
-
-   
 
 }
