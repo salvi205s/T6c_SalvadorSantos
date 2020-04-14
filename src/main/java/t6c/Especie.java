@@ -16,8 +16,10 @@ public class Especie extends Animal {
     private String tipo;
     private int numPatas;
 
-    public Especie(VertebradoInvertebrado vertebradoInvertebrado) {
+    public Especie(String tipo, int numPatas, VertebradoInvertebrado vertebradoInvertebrado) {
         super(vertebradoInvertebrado);
+        this.tipo = tipo;
+        this.numPatas = numPatas;
     }
 
     public String getTipo() {
