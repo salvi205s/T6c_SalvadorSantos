@@ -27,6 +27,7 @@ public class Animal {
         this.vertebradoInvertebrado = vertebradoInvertebrado;
     }
 
+    //metodo polimórfico
     public void presentacion() {
         System.out.print("Hola soy un animal ");
     }
