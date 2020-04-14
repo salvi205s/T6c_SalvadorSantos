@@ -32,6 +32,10 @@ public class Canina extends Especie {
         System.out.println("y vivo en " + habitat);
     }
 
+    public void ladro() {
+        System.out.println("Me paso todo el dia ladrando");
+    }
+
     @Override
     public int hashCode() {
         int hash = 7;
