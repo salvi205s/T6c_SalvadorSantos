@@ -11,15 +11,13 @@ import java.util.Objects;
  *
  * @author Salva
  */
-public class Canina extends Especie{
-    
+public class Canina extends Especie {
+
     private String habitat;
 
     public Canina(VertebradoInvertebrado vertebradoInvertebrado) {
         super(vertebradoInvertebrado);
     }
-
-
 
     public String getHabitat() {
         return habitat;
@@ -27,6 +25,11 @@ public class Canina extends Especie{
 
     public void setHabitat(String habitat) {
         this.habitat = habitat;
+    }
+
+    public void presentacion() {
+        super.presentacion();
+        System.out.println("y vivo en " + habitat);
     }
 
     @Override
@@ -54,13 +57,9 @@ public class Canina extends Especie{
         return true;
     }
 
-   
-
     @Override
     public String toString() {
         return super.toString() + "habitat=" + habitat + '}';
     }
-    
-    
-    
+
 }
