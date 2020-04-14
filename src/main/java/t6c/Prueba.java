@@ -48,15 +48,15 @@ public class Prueba {
         listaAnimales.add(pulpo);
         listaAnimales.add(calamar);
 
+        System.out.println("-----------------------------------------------------------------");
+
+        //Recorre la lista y realiza las siguientes acciones:  
+        //llama a métodos propios de cada clase (“metodoB”, “metodoC” y “metodoD”). llama a “metodoA” de todos los objetos.
         for (Animal animales : listaAnimales) {
+            //metodo polimórfico
             animales.presentacion();
             System.out.println("");
         }
-
-        System.out.println("-----------------------------------------------------------------");
-        //Recorre la lista y realiza las siguientes acciones:  
-        //llama a métodos propios de cada clase (“metodoB”, “metodoC” y “metodoD”). llama a “metodoA” de todos los objetos.
-
         //Todas las conversiones dentro de este for son explicitas
         for (Animal animales : listaAnimales) {
 
@@ -94,6 +94,7 @@ public class Prueba {
         System.out.println("contains " + listaAnimales.contains(pulpo));
         System.out.println("remove " + listaAnimales.remove(pulpo));
 
+        //imprimir para comprobar que pulpo ya no esta en la lista
         for (int i = 0; i < listaAnimales.size(); i++) {
             System.out.println(listaAnimales.get(i));
         }
