@@ -45,6 +45,11 @@ public class Canina extends Especie {
 
     @Override
     public boolean equals(Object obj) {
+        // Compara ambos vehiculos antes de comparar
+        // los atributos propios de turismo
+        if (!super.equals(obj)) {
+            return false;
+        }
         if (this == obj) {
             return true;
         }
