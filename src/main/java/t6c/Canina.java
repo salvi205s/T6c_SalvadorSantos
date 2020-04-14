@@ -15,9 +15,12 @@ public class Canina extends Especie {
 
     private String habitat;
 
-    public Canina(VertebradoInvertebrado vertebradoInvertebrado) {
-        super(vertebradoInvertebrado);
+    public Canina(String habitat, String tipo, int numPatas, VertebradoInvertebrado vertebradoInvertebrado) {
+        super(tipo, numPatas, vertebradoInvertebrado);
+        this.habitat = habitat;
     }
+
+
 
     public String getHabitat() {
         return habitat;
