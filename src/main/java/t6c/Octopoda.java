@@ -33,6 +33,10 @@ public class Octopoda extends Especie {
         System.out.println("y vivo en " + habitat);
     }
 
+    public void parear() {
+        System.out.println("Me he pateado medio oceano pacifico");
+    }
+
     @Override
     public int hashCode() {
         int hash = 5;
