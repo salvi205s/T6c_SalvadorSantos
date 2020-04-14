@@ -36,7 +36,7 @@ public class Cephalopodo extends Especie {
         System.out.println("y vivo en " + habitat);
     }
 
-    public void parear() {
+    public void patear() {
         System.out.println("Me he pateado medio oceano pacifico");
     }
 
