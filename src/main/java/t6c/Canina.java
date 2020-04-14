@@ -27,6 +27,7 @@ public class Canina extends Especie {
         this.habitat = habitat;
     }
 
+    @Override
     public void presentacion() {
         super.presentacion();
         System.out.println("y vivo en " + habitat);
@@ -34,6 +35,11 @@ public class Canina extends Especie {
 
     public void ladro() {
         System.out.println("Me paso todo el dia ladrando");
+    }
+
+    @Override
+    public void comunicacion() {
+        System.out.println("Me comunico ladrando");
     }
 
     @Override
