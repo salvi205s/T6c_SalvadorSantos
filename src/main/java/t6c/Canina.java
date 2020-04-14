@@ -20,8 +20,6 @@ public class Canina extends Especie {
         this.habitat = habitat;
     }
 
-
-
     public String getHabitat() {
         return habitat;
     }
@@ -30,6 +28,7 @@ public class Canina extends Especie {
         this.habitat = habitat;
     }
 
+    //metodo polimórfico
     @Override
     public void presentacion() {
         super.presentacion();
@@ -40,6 +39,7 @@ public class Canina extends Especie {
         System.out.println("Me paso todo el dia ladrando");
     }
 
+    //metodo polimórfico
     @Override
     public void comunicacion() {
         System.out.println("Me comunico ladrando");
