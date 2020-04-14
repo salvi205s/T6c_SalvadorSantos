@@ -36,6 +36,7 @@ public class Especie extends Animal {
         this.numPatas = numPatas;
     }
 
+    @Override
     public void presentacion() {
         super.presentacion();
         System.out.println("tengo " + numPatas + " patas ");
@@ -43,6 +44,10 @@ public class Especie extends Animal {
 
     public void identificacion() {
         System.out.println("Soy un animal de una especie sin determinar ");
+    }
+
+    public void comunicacion() {
+        System.out.println("Me comunico mediante sonidos");
     }
 
     @Override
