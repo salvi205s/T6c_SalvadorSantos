@@ -11,12 +11,15 @@ import java.util.ArrayList;
  * Crea al menos dos instancias de cada clase y añádelas a una lista de objetos
  * de la superclase A. Recorre la lista y realiza las siguientes acciones: llama
  * a métodos propios de cada clase (“metodoB”, “metodoC” y “metodoD”). llama a
- * “metodoA” de todos los objetos. Usa los métodos indexof(Object o),
+ * “metodoA” de todos los objetos. * Usa los métodos indexof(Object o),
  * contains(Object o) y remove(Object o) de la clase ArrayList, sobre la lista
  * de objetos que ya tienes, para buscar un objeto en la lista, saber si existe
- * un objeto en la lista y borrar un objeto de la lista, respectivamente. Si
- * funcionan correctamente significa que el método equals está correctamente
- * implementado. Realiza un commit  *
+ * un objeto en la lista y borrar un objeto de la lista, respectivamente.
+ *
+ * Si funcionan correctamente significa que el método equals está correctamente
+ * implementado. Realiza un commit Comenta el código, indicando donde haces
+ * conversiones implícitas y explícitas y cual o cuales son los métodos
+ * polimórficos que hay en la jerarquía
  */
 public class Prueba {
 
@@ -31,18 +34,57 @@ public class Prueba {
 
         Cephalopodo pulpo = new Cephalopodo("Mar", "Cephalopodo", 8, VertebradoInvertebrado.INVERTEBRADO);
         Cephalopodo calamar = new Cephalopodo("Mar", "Cephalopodo", 10, VertebradoInvertebrado.INVERTEBRADO);
-        
-        ArrayList<Animal> listaAnimales=new ArrayList<>();
-        
+
+        //creamos la lista
+        ArrayList<Animal> listaAnimales = new ArrayList<>();
+
+        //añadimos los objetos a la lista
         listaAnimales.add(especie1);
         listaAnimales.add(especie2);
-        
+
         listaAnimales.add(perro);
         listaAnimales.add(hiena);
-        
+
         listaAnimales.add(pulpo);
         listaAnimales.add(calamar);
-        
 
+        
+        for (Animal animales : listaAnimales) {
+            animales.presentacion();
+            System.out.println("");
+        }
+
+        System.out.println("-----------------------------------------------------------------");
+        //Recorre la lista y realiza las siguientes acciones:  
+        //llama a métodos propios de cada clase (“metodoB”, “metodoC” y “metodoD”). llama a “metodoA” de todos los objetos.
+        
+        //Todas las conversiones dentro de este for son explicitas
+        for (Animal animales : listaAnimales) {
+
+            if (animales instanceof Especie) {
+                System.out.println("Metodo propio de especie");
+
+                Especie e = (Especie) animales;
+                e.identificacion();
+                System.out.println("-----------------");
+            }
+            if (animales instanceof Canina) {
+                System.out.println("Metodo propio de Canina");
+
+                Canina c = (Canina) animales;
+                c.ladro();
+                System.out.println("------------------");
+
+            }
+            if (animales instanceof Cephalopodo) {
+                System.out.println("Metodo propio de Cephalopodo");
+
+                Cephalopodo ceph = (Cephalopodo) animales;
+                ceph.patear();
+                System.out.println("------------------");
+
+            }
+
+        }
     }
 }
