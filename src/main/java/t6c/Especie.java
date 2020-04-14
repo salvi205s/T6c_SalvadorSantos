@@ -40,7 +40,11 @@ public class Especie extends Animal {
         super.presentacion();
         System.out.println("tengo " + numPatas + " patas ");
     }
-    
+
+    public void identificacion() {
+        System.out.println("Soy un animal de una especie sin determinar ");
+    }
+
     @Override
     public int hashCode() {
         int hash = 3;
